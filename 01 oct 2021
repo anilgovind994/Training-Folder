@@ -1,0 +1,203 @@
+1. print the following characters in given format
+ *
+ * *
+* * *
+* * * *
+ * * * * *
+ * * * *
+* * *
+ * *
+ *
+public class daimond {
+	public static void main(String[] args) {
+	int i ,j , k ;
+	for(i=1;i<5;i++)
+	{
+		for(j=5;j>=i;j--)//for printing spaces
+		{
+			System.out.print(" ");	
+		}
+		for(k=1;k<=(i);k++)//for printing stars
+		{
+			System.out.print("* ");	
+		}
+		System.out.println();
+	
+	}
+	
+	for(i=5;i>=1;i--)//reversing the loop
+	{
+		for(j=5;j>=i;j--)
+		{
+			System.out.print(" ");	
+		}
+		for(k=1;k<=(i);k++)
+		{
+			System.out.print("* ");	
+		}
+		System.out.println();
+	
+	}
+	
+	}
+}
+--------------------output----------------
+     * 
+    * * 
+   * * * 
+  * * * * 
+ * * * * * 
+  * * * * 
+   * * * 
+    * * 
+     * 
+
+
+2. read input from console (use scanner from java util package)
+read username and password
+check if given name and password is admin then show "login is successful" else "login is denied"
+
+import java.util.Scanner;
+public class verify {
+	public static void main(String[] args) {
+		Scanner sc =new Scanner(System.in);
+		System.out.println("enter User Name: ");	
+		String name =sc.nextLine();
+		
+		System.out.println("enter Password: ");	
+		String pass =sc.nextLine();
+		
+		if(name.equals("admin") && pass.equals("admin"))
+		{
+			System.out.println("! ! Login is uccessfull ! !");	
+		}
+		else {
+			System.out.println("Login FAILED !!!");
+		}
+		
+		
+	}
+
+}
+-----------output----------------------
+enter User Name: 
+admin
+enter Password: 
+admin
+! ! Login is uccessfull ! !
+
+
+3. given an 3X3 array {{1,3,2},{6,4,5},{7,4,8}} print the right and left diagonal values {1, 4, 8, 7, 4, 2}
+
+public class diagonals 
+{
+	public static void main(String[] args) 
+	{
+		int a[][]={{1,3,2},{6,4,5},{7,4,8}};
+		System.out.println("GIVEN MATRIX");
+		for(int i=0;i<a.length;i++) { 
+			for(int j=0;j<a[i].length;j++) {
+				
+				System.out.print(a[i][j] +"\t");}
+			System.out.println("");
+		
+		}
+		System.out.println("RIGHT DIAGONAL MATRIX");
+		for(int i=0;i<a.length;i++) { 
+			for(int j=0;j<a[i].length;j++) {
+				if(i==j) 
+				System.out.print(a[i][j]);}
+			System.out.println("");
+		
+		}
+		System.out.println("LEFT DIAGONAL MATRIX");
+		for(int i=0;i<a.length;i++) { 
+			for(int j=0;j<a[i].length;j++) {
+				if(i+j==2) 
+				System.out.print(a[i][j] +"\t");}
+			System.out.println("");
+		
+		}
+	}
+
+}
+----------------output---------------------------------
+GIVEN MATRIX
+1	3	2	
+6	4	5	
+7	4	8	
+RIGHT DIAGONAL MATRIX
+1
+4
+8
+LEFT DIAGONAL MATRIX
+2	
+4	
+7	
+
+
+4.
+create a class User with variable balance.
+accept input from user for option (debit (D)/credit (C)):
+Case 1:
+if user chosen option is "C" add amount to user balance
+if the amount entered is less than 0 display error message "amount cannot be negative"
+Case 2:
+if user chosen option is “D” debit the amount from user balance
+if the amount entered is less than 0 display error message "amount cannot be negative"
+if the amount entered is less than user balance display error message "Insufficient Funds"
+Display success Message
+for credit
+“Transaction done on 01/10/2021: Amount Credited To Account Successfully: Remaining Amount:
+<<Show Balance>>
+“Transaction done on 01/10/2021: Amount debited from Account Successfully: Remaining Amount:
+<<Show Balance>>
+
+import java.util.Scanner;
+
+public class bank {
+	public static void main(String[] args) {
+		
+	
+	int balance=500;
+	Scanner sc=new Scanner(System.in);
+	
+	System.out.println("Enter input: d for debit ");
+	System.out.println("             c for credit");
+	
+	String input=sc.nextLine();
+	
+	if(input.equals("d")) {
+		System.out.println("Enter amount to debit ");
+		int amount =sc.nextInt();
+		if(amount==0) {
+			System.out.println("!! Sorry wrong amount to debit ");
+		}
+		else if(amount>balance) {
+			System.out.println("!! Sorry inuicient funds ");
+		}
+	    else {
+			balance=balance-amount;
+			System.out.println("Transaction done on 01/10/2021: Amount Debited To Account Successfully: Remaining Amount:"+ balance);
+			}
+		}
+	
+	if(input.equals("c")) {
+		System.out.println("Enter amount to credit ");
+		int amount =sc.nextInt();
+		if(amount==0) {
+			System.out.println("!! Sorry wrong amount to credit ");
+		}
+		else {
+			balance=balance+amount;
+			System.out.println("Transaction done on 01/10/2021: Amount Credited To Account Successfully: Remaining Amount:"+ balance);
+			}
+		}	
+}
+}
+------------------output------------------------
+Enter amount to debit 
+300
+Transaction done on 01/10/2021: Amount Debited To Account Successfully: Remaining Amount:200
+
+ 
