@@ -1,0 +1,14 @@
+Class – Blue Print for defining members and fuctions (methos)
+Coding standard: Class name should start with capital letter method and variable name should start with lower case
+
+Constructor- Is used creating instance of a class , JVM by default will create this constructor
+Constructor is of two types:
+1. Default Constructor-set default values to instance variables
+2. Parameterised Constructor-to initialise data members of a class with distinct values
+1. Instance Variables –only objects can access, stored in heap memory 
+2. static Variables-No need of objects ,It can be accessed directly ,stored in static memory
+*Memory Model (static memory and heap memory) :
+    >RAM provide some memory to jvm, jvm will setup memory location using memory model  
+    >Stack Memory-contain methods, variables, etc..
+    >Heap Memory-Objects are stored here
+    >Garbage collector: This will be responsible for checking if the memory allocated for application is          sufficient or not 
