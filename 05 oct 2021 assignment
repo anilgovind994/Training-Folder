@@ -1,0 +1,46 @@
+What is root cause for memory Error ?
+what is Xms256m and Xmx2048m. what changes are made in java 8 for memory utilization?
+What is memory leckage, how to avoid it ?
+what is Java Memory Model?
+what is String Pool?
+
+1. What is root cause for memory Error ?
+a. OutOfMemoryError might be thrown when one of the following circumstances occurs:
+   > JVM has run out of native memory.
+   > Java heap is out of memory.
+   > PermGen or Metaspace has run out of memory.
+   > JVM spent too much time trying to collect the garbage.
+ 
+2.what is Xms256m-Xmx2048m. what changes are made in java 8 for memory utilization?
+a.The flag Xmx specifies the maximum memory allocation pool for a Java Virtual Machine (JVM), while Xms specifies the initial memory allocation pool.
+   This means that your JVM will be started with Xms amount of memory and will be able to use a maximum of Xmx amount of memory.
+   Xms256m -Xmx2048m:This means, JVM will startup with 256 MB of memory and will allow the process to use up to 2048 MB of memory.
+   
+   In Java 8:
+   > Permanent Generation (PermGen) space has been removed.
+   > JVM is now using native memory for the representation of class metadata and is called Metaspace; similar to the Oracle JRockit and IBM JVM's.
+   > Garbage collection of the dead classes and classloaders is triggered once the class metadata usage reaches the “MaxMetaspaceSize” is added.
+   > Some miscellaneous data has been moved to the Java heap space. This means you may observe an increase of the Java heap space following a future JDK 8 upgrade.
+   
+3.What is memory leckage, how to avoid it ?
+a.Memory leak occurs when programmers create a memory in heap and forget to delete it.
+  Memory leaks are particularly serious issues for programs like daemons and servers which by definition never terminate.
+   To avoid memory leaks, 
+   > memory allocated on heap should always be freed when no longer needed.
+   > Use Heap Memory Effectively.
+
+4.what is Java Memory Model?
+a.A memory model is best thought of as the architecture that determines how different parts of memory (i.e., stack and heap) interact. 
+  The Java Virtual Machine (JVM) divides the memory into two logical units:
+    1> Thread stack
+    2> Heap
+     >The thread stack is the part of the memory which stores the data specific to a thread. Every thread has its own thread stack.
+     >There is only one shared heap for the whole Java application; it stores the objects created and their member variables (both primitives and references).
+   
+5.what is String Pool?
+a.String pool is nothing but a storage area in Java heap where string literals stores. It isalso known as String Intern Pool or String Constant Pool. 
+It is just like object allocation. By default, it is empty and privately maintained by the Java String class.
+    
+ 
+ 
+ 
