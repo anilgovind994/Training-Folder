@@ -11,4 +11,4 @@ Constructor is of two types:
     >RAM provide some memory to jvm, jvm will setup memory location using memory model  
     >Stack Memory-contain methods, variables, etc..
     >Heap Memory-Objects are stored here
-    >Garbage collector: This will be responsible for checking if the memory allocated for application is          sufficient or not 
+    >Garbage collector: This will be responsible for checking if the memory allocated for application is sufficient or not 
