@@ -1,0 +1,23 @@
+OOPS Concepts:
+1. Encapsulation-
+  data binding : Any variable/function that is declared inside a class should          not be accessible without that specific class
+  
+
+2. Abstraction-
+data hiding : hide irrelevant information through end user only necessary details should be provided
+
+ abstract method (a method which does not have a definition or [incomplete method]) 
+we cannot create object in a abstract class
+and 
+ interface{ used for defining a standard to qualify a type}
+
+3. Inheritance- it will extend exiting function of a parent
+ reusability ()
+
+overriding: method name, return type  and variables are same but task or (member functions) are different
+
+4. polymorphism
+ extension(overloading) : return type and variables are different but method       
+ name is same
+
+
