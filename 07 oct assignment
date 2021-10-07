@@ -16,6 +16,7 @@ a.Use HashSet if you don't want to maintain any order of elements.
 
 3. what is difference between arraylist and linked list
 a.
+  ![array vs linkedlist](https://user-images.githubusercontent.com/60666174/136415431-27255df9-8895-470c-8619-a3d5e6c91109.PNG)
 
 
 4. What is fail fast and fail safe
