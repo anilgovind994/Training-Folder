@@ -12,11 +12,11 @@ Internally HashMap uses a hashCode of the key Object and this hashCode is furthe
 2. How to maintain an order in set?
 a.Use HashSet if you don't want to maintain any order of elements. 
    Use  LinkedHashSet if you want to maintain insertion order of elements.
-   Use TreeSet if you want to sort the elements according to some                                              Comparator.
+   Use TreeSet if you want to sort the elements according to some Comparator.
 
 3. what is difference between arraylist and linked list
 a.
-  ![array vs linkedlist](https://user-images.githubusercontent.com/60666174/136415431-27255df9-8895-470c-8619-a3d5e6c91109.PNG)
+  
 
 
 4. What is fail fast and fail safe
