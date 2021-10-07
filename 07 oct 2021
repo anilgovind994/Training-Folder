@@ -1,0 +1,39 @@
+> comment provides some information there are 2 types
+   single line //,multiple line comment/*   */
+>java doc comment/**            */
+
+Arrays unique datatype (storing data in form of index with a fixed size, empty spaces are 0's )
+creation: int a[]=new int[5];
+
+1.through indexing we can give values 
+arrray[ 0 to n-1]=values
+a[]={values}
+for(int i=o;i<a.length; i++)
+{s.o.p(a[i])}
+
+2. through  enhansed based for loop
+for(data_type variable : array | collection){  
+//body of for-each loop  
+}  
+
+
+
+>collections in java - list, set, map, etc.
+package - folder structure used to maintain in project 
+collections are present in util package
+
+
+
+>>>>>>list
+it is a type of array
+store data in index order whose SIZE is not fixed
+duplicate values are allowed (also in array )
+we can store any datatype
+
+list is an interface
+
+* Daimond operator in collections -it is used to define or fix the datatype
+  premetive
+  
+  
+  >>>>>>
