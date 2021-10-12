@@ -1,0 +1,14 @@
+Git- installation,linking our directories to github
+Tortoise git- installation and working
+
+packages - folders: always start with small case letters, always in first line
+
+access specifiers/modifiers (4):
+default-if a varibale is declared as default then that //variable is accessible within the class and within another class //belonging to same package //
+
+public-freely accessible 
+private-if it is declared as private it can be accessed only //within the class this cannot be accessible in other classer we need to have //setters and getters
+protected
+
+ 
+
