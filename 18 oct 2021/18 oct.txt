@@ -1,0 +1,22 @@
+JSF - Java Server Faces
+
+database setup
+connection
+execute some queries
+show it on console
+
+
+create a table employee
+create table app.employee(empid varchar(100),empnm varchar(100))
+insert into app.employee values('101','Java')
+insert into app.employee values('102','Python')
+insert into app.employee values('103','CSharp')
+
+JDBC - Java DataBase Connectivity
+
+loading drivers
+create connection
+execute statements
+load results
+
+ 

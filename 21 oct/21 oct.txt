@@ -1,0 +1,22 @@
+Serialization
+it is a way of storing object data into a byte stream 
+
+deserialization
+it is a way of converting byte stream into object data
+
+what if implements serializable not provided:- It throws a NotSerializable exception
+what is the use of serialization;- storing object into a byte stream
+Deserialization is the reverse of serialization where the byte stream is used to recreate the actual java object in memory
+
+(
+inheritance-inheriting properties and behavior from a parent
+child class inherit from parent class using extends
+the interface can also inherit another interface using implements
+multiple inheritances-  one class inheriting from more than two-parent classes multiple inheritance-A, B->c
+multilevel inheritance - A->B->C
+interface-collection of a type of data
+we have 3 types of interfaces
+normal interface
+marker interface - used for defining annotations
+functional interface
+)

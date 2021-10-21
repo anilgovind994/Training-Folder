@@ -1,0 +1,26 @@
+Data Base:
+	database is another way to store data
+	
+	free and licenced
+	free-mysql,postgresql
+	licensed-oracle
+ 
+	in-memory: temperory memory,
+	external database applications: no data loss even device is off -less dataloss verson (ex:derby,sqlite)
+							    -high dataloss verson(mysql,postgresql)
+										(oracle XE)
+
+	SQL-structured query language
+	NO SQL
+
+
+	sql-structure tables,columns,rows----json file as input 
+	
+	json format: {
+		"resturant":{
+			"item1":"idol"
+			"item2":"price"
+			"item3":""
+			}
+		    }
+	nosql - 

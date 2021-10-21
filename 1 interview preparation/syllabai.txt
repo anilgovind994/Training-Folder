@@ -1,0 +1,42 @@
+Core Java Programming Introduction of Java
+
+Data types and Operators
+
+Control Flow statements
+
+OOPS and its application in Java
+
+Packages
+
+Miscellaneous
+
+Statics
+
+Constructors
+
+Exceptions in Java
+
+Strings in Java            
+
+Collection Framework in Java
+
+Generics
+
+Input-Output in Java
+
+Serialization
+
+Inner Classes
+
+Threads in Java
+
+Access Modifiers in Java
+
+Java 8
+
+JDBC (Includes basic SQL )
+
+IDE (Eclipse)
+
+Progamming Test mainly on Collections, Exceptions, String and OOPs
+followed by Interview

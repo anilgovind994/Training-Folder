@@ -1,0 +1,12 @@
+sql injection 
+all about database connection
+
+
+/*prepare call,
+resultsetmetadata,
+driver types,
+sql exception,
+execute and execute query,
+how to perform transactions (commit and rollback) in JDBC,
+ACID properties
+pagination*/
