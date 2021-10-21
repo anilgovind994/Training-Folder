@@ -1,0 +1,4 @@
+1.write a method that receives a character array and returns the number of symbols in ana array
+2.write a amethod that receives an array of numbers and a key and returns true if the key exists in the array and false otherwise
+3.write amethod that receives an array and sorts it in an increasing order 
+4.write a method that receices an array and suffles the array randomly
