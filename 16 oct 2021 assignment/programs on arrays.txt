@@ -1,4 +1,131 @@
-1.write a method that receives a character array and returns the number of symbols in ana array
+1.write a method that receives a character array and returns the number of symbols in an an array
+a.
+import java.util.Arrays;
+import java.util.Random;
+import java.util.Scanner;
+public class array {
+public static void main(String[] args) {
+Scanner s= new Scanner(System.in);
+System.out.println("Enter number of inputs :");
+int n=s.nextInt();
+char[] arrr= new char[n];
+for(int j=0;j<arrr.length;j++) {
+	arrr[j]=s.next().charAt(0);} 
+System.out.println("--input--");
+System.out.println(Arrays.toString(arrr));
+System.out.println("--output--");
+System.out.println("--symbols--");
+int count=0;
+for(int i=0;i<arrr.length;i++) {
+	int assci[]=new int[arrr.length];
+	assci[i]=(int)arrr[i];
+	if (assci[i]>=32&&assci[i]<=47) {
+		System.out.println(arrr[i]);
+		count=count+1;}
+	else if (assci[i]>=58&&assci[i]<=64) {
+		System.out.println(arrr[i]);
+		count=count+1;}
+	else if (assci[i]>=91&&assci[i]<=96) {
+		System.out.println(arrr[i]);
+		count=count+1;}
+	else if (assci[i]>=123&&assci[i]<=127) {
+		System.out.println(arrr[i]);
+		count=count+1;}
+}
+System.out.println("Number of symbols : "+count);
+}
+}
+
 2.write a amethod that receives an array of numbers and a key and returns true if the key exists in the array and false otherwise
-3.write amethod that receives an array and sorts it in an increasing order 
+a. import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.stream.*;
+import java.util.Scanner;
+public class array {
+public static void main(String[] args) {
+Scanner s= new Scanner(System.in);
+System.out.println("Enter number of inputs :");
+int n=s.nextInt();
+  int[] arrr= new int[n];
+for(int j=0;j<arrr.length;j++) {
+  arrr[j]=s.nextInt();} 
+
+System.out.println("Enter a key to find in array :");
+int key = s.nextInt();
+
+boolean found=false;
+for(int b:arrr) {
+	if(b==key) {
+		found=true;
+		break;
+	}
+	
+}
+if(found)
+	System.out.println("found true");
+else
+	System.out.println("not found false");
+}
+
+
+}
+
+3.write amethod that receives an array and sorts it in an increasing order
+a.
+	import java.util.Arrays;
+	import java.util.Scanner;
+	public class array {
+	public static void main(String[] args) {
+	Scanner s= new Scanner(System.in);
+	System.out.println("Enter number of inputs :");
+	int n=s.nextInt();
+	  int[] arrr= new int[n];
+	// for alphabets : char[] arrr= new char[n];
+	for(int j=0;j<arrr.length;j++) {
+	  arrr[j]=s.nextInt();} 
+	// for albhabets :arrr[j]=s.next().charAt(0);}
+	
+	System.out.println("Before Sorting");
+	for(int i=0;i<arrr.length;i++) {
+	System.out.println(arrr[i]);}
+	
+	Arrays.sort(arrr);
+	System.out.println("After Sorting");
+
+	for(int i=0;i<arrr.length;i++) {
+	System.out.println(arrr[i]);}
+	
+	s.close();
+	//System.out.println("\t"+2*arrr[i]);
+	}
+	}
+
 4.write a method that receices an array and suffles the array randomly
+import java.util.Arrays;
+import java.util.Random;
+import java.util.Scanner;
+public class array {
+public static void main(String[] args) {
+Scanner s= new Scanner(System.in);
+System.out.println("Enter number of inputs :");
+int n=s.nextInt();
+int[] arrr= new int[n];
+for(int j=0;j<arrr.length;j++) {
+	arrr[j]=s.nextInt();} 
+System.out.println("-----Before Shuffling -----");
+System.out.println(Arrays.toString(arrr));
+for(int i=0;i<arrr.length;i++)
+System.out.println(arrr[i]);
+System.out.println("-----After Shuffling -----");
+Random rd = new Random();
+for(int i=0;i<arrr.length;i++){
+	int k=rd.nextInt(arrr.length);
+	int temp=arrr[k];
+	arrr[k]=arrr[i];
+	arrr[i]=temp;  }
+System.out.println(Arrays.toString(arrr));
+for(int i=0;i<arrr.length;i++)
+System.out.println(arrr[i]);
+
+}
+}
