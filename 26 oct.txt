@@ -1,0 +1,86 @@
+java 8 featutes--https://www.oracle.com/java/technologies/javase/8-whats-new.html
+
+Design patterns--
+
+gang of four--https://springframework.guru/gang-of-four-design-patterns/
+
+list
+ArrayList vs List
+
+
+Interface--//backward compatability problem-->java 8 has solution using abstract(need to be implemented),default(can be ignored) and static methods (can be ignored)
+
+1.If i want to add a new method to interface that is compalsory to implement taht method in all child classes
+
+2. for specific class if i want to add method i cant add it to interface
+
+
+>default method add new functionality to the interface
+
+
+
+
+public class MyClass {
+	public static void main(String[] args) {
+        MyInterface mi = new NewClass();
+        mi.defMethod();
+        
+    }
+}
+// default and static method
+interface MyInterface{
+    public void myMethod();
+    
+    default void defMethod() {
+        System.out.println("Hello I am default Method");
+    }
+    
+    static void staticMethod() {
+        System.out.println("Hello I am static Method");
+    }
+}
+class NewClass implements MyInterface{
+    @Override
+    public void myMethod() {
+        
+        
+    }
+    
+}
+//-----------------multiple inheritance using inheritances
+
+public class MyClass implements MyInterface1, MyInterface2 {
+
+ 
+
+    public static void main(String[] args) {
+        MyClass mc = new MyClass();
+        mc.myMethod();
+    }
+
+ 
+
+    @Override
+    public void myMethod() {
+        MyInterface1.super.myMethod();
+        MyInterface2.super.myMethod();
+    }
+}
+
+ 
+
+interface MyInterface1 {
+    default void myMethod() {
+        System.out.println("hello1");
+    }
+}
+
+ 
+
+interface MyInterface2 {
+    default void myMethod() {
+        System.out.println("hello2");
+    }
+}
+
+----------------------functional interface----------------------------------

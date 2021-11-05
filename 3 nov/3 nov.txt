@@ -1,0 +1,123 @@
+
+SPA uses HTML5 and AJAX
+
+
+ Advantages of Single-Page Apps
+Enhanced User Experience
+The Base for Mobile Apps
+Easier and Faster to Develop
+Advantages of Multi-Page Apps
+Easier to Scale.
+Improved Search Engine Optimisation (SEO)
+Insightful Data Analytics
+
+jsp life cycle  JAVA SERVER PAGES
+
+_jspinit
+_jspservice
+_jspdestroy
+
+
+tags in jsp
+1.
+<!--declaration tag --> jspinit
+<%!int i=0; %>
+2.
+<!-- scriplet tag- --> --sysout
+<%
+out.println("no of users visited :" + ++i);
+%>
+3.
+<!-- Expressipn tag  -->
+<%="Hello world" %>
+4.
+<!-- Directive tag-->  ---for importing packages
+1<%@   page directive%>
+2<%@ include directive%>
+3<%@ %>--taglib--create customised components
+
+
+
+xsd-->xml schema definition  -->definr the type of xml
+--validating xml--
+
+
+
+<%@page import="java.sql.Connection"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+ <%@ taglib prefix="mytag" uri="http://java.sun.com/jsp/jstl/core" %>
+   
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add</title>
+<script>
+   
+</script>
+</head>
+<body>
+<mytag:out value="hello"/>
+<%="hello this is jsp" %>
+</body>
+</html>
+
+[12:42] Durga Prasad (Guest)
+    
+different types of tages in JSP
+
+
+
+
+1. scriptlet tag - to write java logic in jsp service method
+    <%
+    
+    %>
+    
+2. declaration tag - jsp init
+    <%!
+    
+    
+    %>
+    
+3. expression tag - sysout
+
+
+    <%= string
+    %>
+    
+4. Directive tag - page importing the packages
+
+
+    <%@
+    
+    %>
+    
+    
+    <%@page import="java.sql.Connection"%>
+    
+    include 
+    <%@include file=""
+    %>
+    
+    taglib directive
+    
+    
+    Java server pages tag library
+    <%@taglib prefix and uri
+    
+    %>
+
+
+
+
+
+​[12:43] 
+      
+      
+      Yamini (Guest) has temporarily joined the chat.
+    ​[12:43] Harika (Guest)
+    no sir
+
+

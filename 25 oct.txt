@@ -1,0 +1,125 @@
+immutable class in java.
+	class should be final
+	no setters
+	set values through contructors
+
+
+	// == checks for value and refrence
+	//.equals for value alone
+
+// concurrency issue
+      Thread safe is no multple operations should be performed on a object simultaneously which may lead to data inconsistency
+          
+
+// concrete class - a class with all methods implemented
+//abstract class- can have both method  implementation and method definition 
+//annonymous class- 
+  expublic class MyClass {
+
+ 
+
+    public static void main(String[] args) {
+        MyInterface mi = new MyInterface() {
+
+ 
+
+            @Override
+            public void myMethod() {
+                System.out.println("hello");
+
+ 
+
+            }
+        };
+        mi.myMethod();
+    }
+}
+
+ 
+
+interface MyInterface {
+    public void myMethod();
+}package com.pack;
+
+ 
+
+public class MyClass {
+
+ 
+
+    public static void main(String[] args) {
+        Parent p = new Parent();
+        p.myParent();
+    }
+}
+
+ 
+
+class Parent {
+    int a;
+
+ 
+
+    public void myParent() {
+        class Child {
+            int b;
+
+ 
+
+            public void myChild() {
+                System.out.println("Child");
+            }
+        }
+        Child c = new Child();
+        c.myChild();
+    }
+
+ 
+
+}
+//local method inner class
+---------------------------------------------------------------------
+package com.pack;
+
+ 
+
+public class MyClass {
+
+ 
+
+    public static void main(String[] args) {
+        Parent p = new Parent();
+        Parent.Child child = p.new Child();
+        child.myChild();
+    }
+}
+
+ 
+
+class Parent {
+    int a;
+
+ 
+
+    public void myParent() {
+        System.out.println("parent");
+    }
+
+ 
+
+    class Child {
+        int b;
+
+ 
+
+        public void myChild() {
+            System.out.println("Child");
+        }
+    }
+}
+
+
+
+
+
+-----------------------------------------------------\

@@ -1,0 +1,19 @@
+1. how to create a thread in java. 
+     To create thread in java by extending Thread class
+                                           by implementing runnable interface
+
+2.How to execute a thread in java?
+   a> For class extending Thread class the logic that needs to be executed have to be written inside run method,create object of the class and call the start method using object reference
+   b> For class implementing runnable interface override run method and write the logic that needs to be executed  in itsince runnable is an interface we dont have start method logic implementd hence, so we have to              create thread object refrence by pssing runnable thread class refrence to the thread class parameteriised constructor,call the start method on the thrad class methods.
+
+
+Thread Lifecycle
+   objects are like passengers in a busstand
+
+obj.wait    ------ notify and notify all commands are used to revoke
+
+obj.sleep  ------we have to interupt the sleep 
+
+blocked  ------ we can set priority to block some objects
+
+terminated --- we need to stop the execution

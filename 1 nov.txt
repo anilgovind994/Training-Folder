@@ -1,0 +1,114 @@
+
+
+
+
+
+
+
+sample jsp program
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<p>Hello Welcome to Servet and JSP</p>
+</body>
+</html>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="3.1"
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <display-name>MyWebApp</display-name>
+    <servlet>
+        <servlet-name>MyServlet</servlet-name>
+        <servlet-class>com.pack.MyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyServlet</servlet-name>
+        <url-pattern>/MyServlet\</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
+
+
+[12:19] Durga Prasad (Guest)
+    <?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="3.1"
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <display-name>MyWebApp</display-name>
+    <servlet>
+        <servlet-name>myservlet</servlet-name>
+        <servlet-class>com.pack.MyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>myservlet</servlet-name>
+        <url-pattern>/myservlet</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
+ 
+​[12:21] 
+      Durga Prasad (Guest) no longer has access to the chat.
+    ​[12:22] 
+      
+      
+      Durga Prasad (Guest) has temporarily joined the chat.
+    ​[12:24] Durga Prasad (Guest)
+    <?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="3.1"
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <display-name>MyWebApp</display-name>
+    <servlet>
+        <servlet-name>myservlet</servlet-name>
+        <servlet-class>com.pack.MyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>myservlet</servlet-name>
+        <url-pattern>/myservlet</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
+ 
+​[12:29] Durga Prasad (Guest)
+    <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+    function add() {​​​​​​
+        var a = document.getElementById("a").value;
+        var b = document.getElementById("b").value;
+        var div = document.getElementById("sum");
+        div.innerText = (parseInt(a) + parseInt(b));
+    }​​​​​​
+</script>
+</head>
+<body>
+    <form action="./myservlet">
+        Enter A: <input type="text" name="a" /> <br /> <br /> Enter B: <input
+            type="text" name="b" /> <br />
+        <br />
+        <input type="submit"/>
+        <div id="sum"></div>
+    </form>
+</body>
+</html>

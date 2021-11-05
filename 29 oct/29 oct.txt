@@ -1,0 +1,18 @@
+web applicatinon
+
+deploying--moving source code from loacal machine to server machine
+publishing--runnig the latest source code on server
+hosting--makin our application accrssible via internet or intranet
+
+jsp--java side components
+servlets-are
+
+
+
+limitation of js: complex calculations cannot be done
+
+static vs dynamic
+
+session tracking -stateless 
+dtabase odnnectivity
+code confidentiality/securirnt

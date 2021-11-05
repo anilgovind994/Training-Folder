@@ -1,0 +1,28 @@
+web application - JSF (java server faces )
+
+SDLC-software develpment lifde cycle
+
+1.requirement gathering- functional and non-functional
+2.planning- technologies involved ,resources for task,softwares,license,cost ,budget
+3.designing-view,look and feel,flow chart,database,tables,design,structure,etc
+4.developing/coding-real coding 
+5.testing-unit testing,integeration testing
+6.deploying-once the requrimenents are met wecan go for production(live)
+7.Maintanance -fixing bugs,enhancements,etc.
+
+
+
+waterfall model
+agile methodology
+
+scrum
+sprint
+
+1.externsiability,scaslability,robust,trending,secured,availability,maintanance
+
+
+
+
+
+1.requirement document
+2.design

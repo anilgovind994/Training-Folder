@@ -1,0 +1,127 @@
+///scrip
+
+types of servlet-init-to initialise
+	generic(service)
+	httpservive (doget,dopost )
+		destroy-to destroy
+
+
+servlet life cycle
+
+
+
+JSP is a web side component which will be a combinaiton of java and html
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+    function add() {
+        var a = document.getElementById("a").value;
+        var b = document.getElementById("b").value;
+        var div = document.getElementById("sum");
+        div.innerText = (parseInt(a) + parseInt(b));
+    }
+</script>
+</head>
+<body>
+    <form action="./myservlet">
+        Enter A: <input type="text" name="a" /> <br /> <br /> Enter B: <input
+            type="text" name="b" /> <br />
+        <br />
+        <input type="submit"/>
+        <div id="sum"></div>
+    </form>
+</body>
+</html>
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title></title>
+</head>
+<body>
+<%
+//scriptlet tag - execute java code .jsp
+//implicit objects - out, response, session, application, page, request
+String a = request.getParameter("a");
+String b = request.getParameter("b");
+out.println(a+b);
+%>
+</body>
+</html>
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+    <form action="add.jsp">
+        Enter A: <input type="text" name="a" /> <br /> <br /> Enter B: <input
+            type="text" name="b" /> <br />
+        <br />
+        <input type="submit"/>       
+    </form>
+</body>
+</html>
+
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title></title>
+</head>
+<body>
+<%
+//scriptlet tag - execute java code .jsp
+//implicit objects - out, response, session, application, page, request
+String a = request.getParameter("a");
+String b = request.getParameter("b");
+out.println(a+b);
+%>
+</body>
+</html>
+
+
+
+import java.io.IOException;
+
+ 
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+ 
+
+
+public class MyServlet extends HttpServlet {
+
+ 
+
+    private static final long serialVersionUID = 1L;
+
+ 
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String a = req.getParameter("a");
+        String b = req.getParameter("b");
+        int sum = Integer.parseInt(a) + Integer.parseInt(b);
+        resp.getWriter().append("Sum-->" + (sum));
+    }
+}
