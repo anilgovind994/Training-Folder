@@ -1,0 +1,154 @@
+java frameworks- Spring,Hibernate,struts,jsf,etc
+
+
+API-application programming interface -lot of readymade 
+
+Spring (core FrameWork) -most used framework -spring boot
+
+1.project -web application,standalone
+2.server-tomcat
+3.database-
+4.html pages
+
+
+spring is a applicatio framework 
+it works on principle IOC-Inversion of control -use fpr dependency injection
+
+
+dependency injection (via binding)-dependent classes are injected to parent class using ioc container-creating objests
+
+1.setter getter injection
+
+2.constructor injection
+
+
+IOC containers-- beanfactory ,application conetext
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[12:07] Durga Prasad (Guest)
+    
+package com.store;
+
+
+public class Employee {​​​​​​
+
+
+    public void addAddress() {​​​​​​
+        Address address = new Address();
+        address.setDoorNo("12-3-43");
+        address.setPincode("524001");
+        address.setStreet("mystreet");
+    }​​​​​​
+}​​​​​​
+ 
+
+
+
+
+​[12:07] Durga Prasad (Guest)
+    
+package com.store;
+
+
+public class Address {​​​​​​
+
+
+    private String doorNo;
+    private String street;
+    private String pincode;
+
+
+    public String getDoorNo() {​​​​​​
+        return doorNo;
+    }​​​​​​
+
+
+    public void setDoorNo(String doorNo) {​​​​​​
+        this.doorNo = doorNo;
+    }​​​​​​
+
+
+    public String getStreet() {​​​​​​
+        return street;
+    }​​​​​​
+
+
+    public void setStreet(String street) {​​​​​​
+        this.street = street;
+    }​​​​​​
+
+
+    public String getPincode() {​​​​​​
+        return pincode;
+    }​​​​​​
+
+
+    public void setPincode(String pincode) {​​​​​​
+        this.pincode = pincode;
+    }​​​​​​
+
+
+}​​​​​​
+ 
+
+
+
+
+
+
+
+
+
+
+
+​[12:07] Durga Prasad (Guest)
+    
+package com.store;
+
+
+public class MainClass {​​​​​​
+    public static void main(String[] args) {​​​​​​
+        Employee emp = new Employee();
+        emp.addAddress();
+    }​​​​​​
+}​​​​​​
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. what is IOC, Dependency injection
+2. what is @Component, @Service, @Repository, @Transaction
+3. difference between @Component and @Bean
+4. What is spring boot and what is @SpringBootApplication
+5. how mamy types of autowire and what is default
+6. what is qualifier used for
+7. what is scope of bean, what is default scope
+8. what is cyclic dependency issue in spring how to avoid it
+9. what is difference between application context and beanfactory and how many types of application context
+10 . how to write constructor injection in spring
