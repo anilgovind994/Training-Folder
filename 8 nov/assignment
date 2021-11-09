@@ -1,0 +1,70 @@
+1. what is IOC, Dependency injection
+a.Inversion of Control(IoC) means that objects do not create other objects on which they rely to do their work.
+Dependency injection (DI) is a pattern or method through which Inversion of Control(IoC) is implemented.
+The act of connecting objects with other objects or injecting objects into objects is done by container rather than by the object themselves.
+Dependency Injection is implemented by constructor injection, setter injection or Interface injection. 
+
+ 
+2. what is @Component, @Service, @Repository, @Transaction
+a.@Component annotation marks a java class as a bean so the component-scanning mechanism of spring can pick it up and pull it into the application context
+
+  @Service - It behaves just like a Component annotation. It doesn’t currently provide any additional behavior over the @Component annotation, 
+  but it’s a good strate to use @Service over @Component in service-layer classes because it specifies the actual intent of the class better
+
+  @Repository - provides a suitable need for DAO layer, it also makes unchecked exceptions thrown in the DAO layer eligible to be translated into Spring DataAccessException
+
+  @Transactional annotation is the metadata that specifies the semantics of the transactions on a method. We have two ways to rollback a transaction:declarative and programmatic. 
+
+3. difference between @Component and @Bean
+a.@Component is a class level annotation whereas @Bean is a method level annotation and name of the method serves as the bean name. 
+  @Component need not to be used with the @Configuration annotation where as @Bean annotation has to be used within the class which is annotated with @Configuration.
+
+4. What is spring boot and what is @SpringBootApplication
+a.Java Spring Boot (Spring Boot) is a tool that makes developing web application and microservices with Spring Framework faster and easier through 
+  three core capabilities: Autoconfiguration. An opinionated approach to configuration. The ability to create standalone applications.
+ 
+ @SpringBootApplication annotation is used to mark a configuration class that declares one or more @Bean methods and also triggers auto-configuration and component scanning. 
+  It's same as declaring a class with @Configuration, @EnableAutoConfiguration and @ComponentScan annotations.
+5. how mamy types of autowire and what is default
+a.No.	 Mode	       Description
+  1)	 no	         It is the default autowiring mode. It means no autowiring bydefault.
+  2)	 byName	     The byName mode injects the object dependency according to name of the bean. In such case, property name and bean name must be same. It internally calls setter method.
+  3)	 byType	     The byType mode injects the object dependency according to type. So property name and bean name can be different. It internally calls setter method.
+  4)	 constructor The constructor mode injects the dependency by calling the constructor of the class. It calls the constructor having large number of parameters.
+  5)	 autodetect	 It is deprecated since Spring 3.
+
+6. what is qualifier used for
+a.The @Qualifier annotation in Spring is used to differentiate a bean among the same type of bean objects. 
+  If we have more than one bean of the same type and want to wire only one of them then use the @Qualifier annotation along with @Autowired to specify which exact bean will be wired.
+
+7. what is scope of bean, what is default scope
+a.When defining a <bean> you have the option of declaring a scope for that bean. 
+  For example, to force Spring to produce a new bean instance each time one is needed, you should declare the bean's scope attribute to be prototype. 
+  Similarly, if you want Spring to return the same bean instance each time one is needed, you should declare the bean's scope attribute to be singleton.
+
+  Singleton is the default scope for a Bean, the one that will be used if nothing else is indicated
+
+8. what is cyclic dependency issue in spring how to avoid it
+a.Circular dependency in Spring happens when two or more beans require instance of each other through constructor dependency injections. 
+  For example: There is a ClassA that requires an instance of ClassB through constructor injection and ClassB requires an instance of class A through constructor injection
+  TYo avoid it we can use-
+  1. Redesign. When you have a circular dependency, it's likely you have a design problem and the responsibilities are not well separated. ...
+  2. Use @Lazy. 
+  3. Use Setter/Field Injection. 
+  4. Use @PostConstruct. 
+  5. Implement ApplicationContextAware and InitializingBean.
+  
+9. what is difference between application context and beanfactory and how many types of application context
+a.The Spring Framework comes with two IOC containers – BeanFactory and ApplicationContext. 
+   The BeanFactory is the most basic version of IOC containers, and the ApplicationContext extends the features of BeanFactory.
+       Lazy Loading vs. Eager Loading
+      BeanFactory loads beans on-demand, while ApplicationContext loads all beans at startup
+   Types of Application Context
+   1. AnnotationConfigApplicationContext. 
+   2. AnnotationConfigWebApplicationContext. 
+   3. XmlWebApplicationContext. 
+   4. FileSystemXMLApplicationContext. 
+   5. ClassPathXmlApplicationContex.
+     
+10 . how to write constructor injection in spring
+a. The <constructor-arg> subelement of <bean> is used for constructor injection.
