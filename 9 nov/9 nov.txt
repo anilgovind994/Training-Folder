@@ -1,0 +1,5 @@
+@Controller - marks the class as a Spring Web MVC controller
+  
+  @RestController combines @Controller and @ResponseBody – which eliminates the need to annotate every request handling method of the controller class with the @ResponseBody annotation
+
+  @Configuration - marks that the class contains one or more beans defined inside
