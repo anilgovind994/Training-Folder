@@ -1,0 +1,38 @@
+1. what is the difference between maven and gradle
+a.Gradle does not use an XML file for declaring the project configuration whereas uses an XML file for declaring the project, its dependencies, the build order, and its required plugin.
+   Gradle is based on a graph of task dependencies  in which tasks are the things that do the work  while Maven is based on a fixed and linear model of phases. 
+   With Maven, goals are attached to project phases, and goals serve a similar function to Gradle’s tasks, being the “things that do the work.”
+   
+2. what is difference between yaml and properties file
+a. No Maps or lists in properties file, but yaml has it
+    yaml and properties extensions supports key and values and Yaml has extra support for Arrays and     map types
+    yaml supports Integer,Strings,Maps,Lists. properties supports primitive types like strings and numbers
+    yaml supports hierarchical structure. Properties upports flat and non hierarchical structure
+3. what is profiles in spring boot
+a.Spring Profiles provide a way to segregate parts of your application configuration and make it only available in certain environments. 
+Any @Component or @Configuration can be marked with @Profile to limit when it is loaded:
+
+@Configuration
+@Profile("production")
+public class ProductionConfiguration {
+
+    // ...
+
+}
+4. difference between internal embedded and external db config
+a. By default, the internal database in the master controller is used for authentication. You can choose to use the internal database in a local controller by entering the CLI command aaa authentication-server internal use-local-switch. If you use the internal database in a local controller, you need to add clients on the local controller.
+
+
+5. what is entity and different types of mappings
+a.An entity is a lightweight persistence domain object. Typically, an entity represents a table in a relational database, and each entity instance corresponds to a row in that table. The primary programming artifact of an entity is the entity class, although entities can use helper classes.
+
+> JPA One -to -one Shared primary key relationship mapping
+> JPA One -to -one foreign key relationship mapping
+> JPA One -to -Many relationship mapping
+> JPA Many -to - Many relationship mapping
+> JPA Many -to - Many Extra Columns Relationship mapping
+
+6. logging in spring boot application
+a.Step 1: Exclude logback and include log4j2. As mentioned earlier, spring boot uses logback as default. ...
+  Step 2: Add log4j2 configuration file. Now, add log4j2 specific configuration file in classpath (typically in     resources folder)
+  Step 3: With or without Slf4j.

@@ -3,3 +3,28 @@
   @RestController combines @Controller and @ResponseBody – which eliminates the need to annotate every request handling method of the controller class with the @ResponseBody annotation
 
   @Configuration - marks that the class contains one or more beans defined inside
+
+
+
+
+
+spring -
+	-core-definning beans ,arutowriting
+               -java JPA -ajava persistance api 
+              - web mvc -model view controller - design web applications
+	-boot-(core+dataJPA+web mvc+embeded server)
+
+microservice vs monolithic
+
+
+
+1. what is the difference between maven and gradle
+2. what is difference between yaml and properties file
+3. what is profiles in spring boot
+4. difference between internal embedded and external db config
+5. what is entity and different types of mappings
+6. logging in spring boot application
+
+
+
+

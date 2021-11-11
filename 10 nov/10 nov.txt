@@ -1,0 +1,33 @@
+
+
+entity-dbo-database objects-ORM (object relational mapping)
+
+tables -> classes in form of entities
+	THERE should be a primary key
+
+
+
+web application- only one lang/tech used
+
+web services -multiple lang/technologies used
+
+@RestController-creating rest sercice -share data ui angular/react/android -(@Controller + @ResponseBody)
+@Controller-web application-spring mvc -both ui and data will be taken care
+
+
+Response Body -request -from the client (browser,button)
+angular-front end technology with a drawback of not connecting with data base
+JSON Array
+
+
+1. JSON
+2. JSON Array
+3. Controller and RestController
+4. Soap and Restful Webservices
+5. What is difference between web application and webservice application
+6. response body and response entity
+7. what is ddl and what is ddl-auto
+8. JPARepository, PagingAndSortingRepository and CRUDRepositoy
+9.what are maapings one-to-one ,one-to-many ,mant-to-one,many-to-many
+10.what are relations in parent child table is-a, uses-a, has-a
+11.what is transient in jpa

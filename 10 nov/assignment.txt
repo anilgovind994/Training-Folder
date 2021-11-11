@@ -1,0 +1,48 @@
+1. JSON
+a. JSON stands for JavaScript Object Notation
+    JSON is a text format for storing and transporting data
+    JSON is "self-describing" and easy to understand
+2. JSON Array
+a. Arrays in JSON are almost the same as arrays in JavaScript.
+   In JSON, array values must be of type string, number, object, array, boolean or null.
+   In JSON array, values must be separated by comma.
+   The [ (square bracket) represents JSON array.eg:["Sunday", "Monday", "Tuesday", "Wednesday",   "Thursday", "Friday", "Saturday"]    
+3. Controller and RestController
+a. used to create a map of model object and find a view. difference in how the http response is created
+The @Controller is a annotation to mark class as Controller Class in Spring While @RestController is used in REST Web services and similar to @Controller and @ResponseBody. ... The key difference is that you do not need to use @ResponseBody on each and every handler method once you annotate the class with @RestController.
+4. Soap and Restful Webservices
+a.1)SOAP is a protocol. REST is an architectural style.
+   2)SOAP stands for Simple Object Access Protocol. REST stands for REpresentational State Transfer.
+   3)SOAP can't use REST because it is a protocol. REST can use SOAP web services because it is a concept and can use any protocol like HTTP, SOAP.
+   4)SOAP uses services interfaces to expose the business logic.REST uses URI to expose business logic.
+
+5. What is difference between web application and webservice application
+a. Web service is a technology to communicate one programming language with another. For example, java programming language can interact with PHP and .Net by using web services. In other words, web service provides a way to achieve interoperability.
+Web Services can be used to transfer data between Web Applications.
+Web Services can be accessed from any languages or platform.
+A Web Application is meant for humans to read, while a Web Service is meant for computers to read.
+Web Application is a complete Application with a Graphical User Interface (GUI), however, web services do not necessarily have a user interface since it is used as a component in an application.
+
+
+6. response body and response entity
+a.ResponseEntity represents an HTTP response, including headers, body, and status. While @ResponseBody puts the return value into the body of the response, ResponseEntity also allows us to add headers and status code.
+
+7. what is ddl and what is ddl-auto
+a. Data Definition Language (DDL) DDL changes the structure of the table like creating a table, deleting a table, altering a table, etc. All the command of DDL are auto-committed that means it permanently save all the changes in the database.
+
+8. JPARepository, PagingAndSortingRepository and CRUDRepositoy
+a.CrudRepository mainly provides CRUD functions. PagingAndSortingRepository provides methods to do pagination and sorting records. JpaRepository provides some JPA-related methods such as flushing the persistence context and deleting records in a batch.
+
+9.what are maapings one-to-one ,one-to-many ,many-to-one,many-to-many
+a.The Many-To-One mapping represents a single-valued association where a collection of entities can be associated with the similar entity. Hence, in relational database any more than one row of an entity can refer to the similar rows of another entity.
+The Many-To-Many mapping represents a collection-valued association where any number of entities can be associated with a collection of other entities. In relational database any number of rows of one entity can be referred to any number of rows of another entity.
+The One-To-One mapping represents a single-valued association where an instance of one entity is associated with an instance of another entity. In this type of association one instance of source entity can be mapped atmost one instance of target entity.
+The One-To-Many mapping comes into the category of collection-valued association where an entity is associated with a collection of other entities. Hence, in this type of association the instance of one entity can be mapped with any number of instances of another entity.
+
+10.what are relations in parent child table is-a, uses-a, has-a
+a.Child tables and parent tables are just normal database tables, but they’re linked in a way that's described by a parent–child relationship.
+
+It’s usually used to specify where one table’s value refers to the value in another table (usually a primary key of another table).
+
+11.what is transient in jpa
+a.@Transient annotation in JPA or Hibernate is used to indicate that a field is not to be persisted or ignore fields to save in the database. ... It is used to annotate a property or field of an entity class, mapped superclass, or embeddable class.
